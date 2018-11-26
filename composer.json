@@ -1,0 +1,64 @@
+{
+    "name": "itinerisltd/wc-new-order-email-sorting-hat",
+    "type": "wordpress-plugin",
+    "description": "Send new order emails to different recipients according to product types",
+    "keywords": [
+        "email",
+        "notification",
+        "woocommerce",
+        "wordpress",
+        "wp"
+    ],
+    "homepage": "https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "hello@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^5.4"
+    },
+    "require-dev": {
+        "itinerisltd/itineris-wp-coding-standards": "^0.1.0",
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Itineris\\WCNewOrderEmailSortingHat\\": "src/"
+        }
+    },
+    "scripts": {
+        "check-style": "phpcs --colors -p",
+        "pretag": [
+            "composer update --no-suggest",
+            "@check-style",
+            "composer normalize",
+            "doctoc README.md",
+            "github_changelog_generator --no-verbose"
+        ]
+    },
+    "support": {
+        "email": "hello@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/issues",
+        "source": "https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat"
+    }
+}
