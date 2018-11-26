@@ -29,7 +29,7 @@ abstract class AbstractNotifier implements NotifierInterface
         return (string) get_option('admin_email', '');
     }
 
-    public function mergeRecipient(array $recipients): array
+    public function mergeRecipients(array $recipients): array
     {
         return array_merge($recipients, $this->getRecipients());
     }
