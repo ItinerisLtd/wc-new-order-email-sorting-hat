@@ -12,6 +12,19 @@ Send new order emails to different recipients according to product types.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Minimum Requirements](#minimum-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [FAQ](#faq)
+  - [Will you add support for older PHP versions?](#will-you-add-support-for-older-php-versions)
+  - [It looks awesome. Where can I find some more goodies like this?](#it-looks-awesome-where-can-i-find-some-more-goodies-like-this)
+  - [This plugin isn't on wp.org. Where can I give a ⭐️⭐️⭐️⭐️⭐️ review?](#this-plugin-isnt-on-wporg-where-can-i-give-a-%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F%EF%B8%8F-review)
+- [Feedback](#feedback)
+- [Change Log](#change-log)
+- [Security](#security)
+- [Credits](#credits)
+- [License](#license)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Minimum Requirements
