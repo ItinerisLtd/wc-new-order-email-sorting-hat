@@ -9,5 +9,5 @@ interface NotifierInterface
 
     public function shouldNotify(int ...$productIds): bool;
 
-    public function mergeRecipient(array $recipients): array;
+    public function mergeRecipients(array $recipients): array;
 }
