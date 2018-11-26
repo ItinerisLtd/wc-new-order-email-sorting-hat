@@ -1,10 +1,18 @@
 # Change Log
 
+## [0.1.2](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/tree/0.1.2) (2018-11-26)
+[Full Changelog](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/compare/0.1.1...0.1.2)
+
+**Merged pull requests:**
+
+- Fix typo: `getRecipient` -\> `getRecipients` [\#3](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/pull/3) ([TangRufus](https://github.com/TangRufus))
+
 ## [0.1.1](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/tree/0.1.1) (2018-11-26)
 [Full Changelog](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/compare/0.1.0...0.1.1)
 
 **Merged pull requests:**
 
+- Version bump 0.1.1 [\#2](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/pull/2) ([TangRufus](https://github.com/TangRufus))
 - composer require composer/installers [\#1](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/pull/1) ([TangRufus](https://github.com/TangRufus))
 
 ## [0.1.0](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/tree/0.1.0) (2018-11-26)
