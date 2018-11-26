@@ -17,6 +17,6 @@ class FallbackNotifier extends AbstractNotifier
 
     protected function getOptionTitle(): string
     {
-        return __('Fallback Recipient(s)', 'woocommerce');
+        return __('Fallback Recipient(s)', 'wc-new-order-email-sorting-hat');
     }
 }

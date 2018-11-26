@@ -5,8 +5,25 @@ namespace Itineris\WCNewOrderEmailSortingHat;
 
 class SpecificEventTicketNotifier extends EventTicketNotifier
 {
+    /**
+     * Option ID
+     *
+     * @var string
+     */
     protected $optionId;
+
+    /**
+     * Option title
+     *
+     * @var string
+     */
     protected $optionTitle;
+
+    /**
+     * Targeted post types
+     *
+     * @var string[]
+     */
     protected $includePostTypes;
 
     public function __construct(string $optionId, string $optionTitle, string ...$includePostTypes)
@@ -18,12 +35,14 @@ class SpecificEventTicketNotifier extends EventTicketNotifier
 
     public function shouldNotify(int ...$productIds): bool
     {
-        return null !== array_first($productIds, function ($id): bool {
-                $tribeWoo = tribe('tickets-plus.commerce.woo');
-                $event = $tribeWoo->get_event_for_ticket($id);
-                return is_a($event, 'WP_Post') &&
-                    in_array($event->post_type, $this->includePostTypes, true);
-            });
+        $first = array_first($productIds, function ($id): bool {
+            $tribeWoo = tribe('tickets-plus.commerce.woo');
+            $event = $tribeWoo->get_event_for_ticket($id);
+            return is_a($event, 'WP_Post') &&
+                in_array($event->post_type, $this->includePostTypes, true); // phpcs:ignore
+        });
+
+        return null !== $first;
     }
 
     protected function getOptionId(): string

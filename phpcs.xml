@@ -16,20 +16,4 @@
     </rule>
 
     <rule ref="Itineris"/>
-
-    <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
-        <exclude-pattern>/src/AddOn.php</exclude-pattern>
-    </rule>
-
-    <rule ref="PSR2.Classes.PropertyDeclaration.Underscore">
-        <exclude-pattern>/src/AddOn.php</exclude-pattern>
-    </rule>
-
-    <rule ref="Squiz.Commenting.VariableComment.Missing">
-        <exclude-pattern>/src/AddOn.php</exclude-pattern>
-    </rule>
-
-    <rule ref="Generic.Files.LineLength.TooLong">
-        <exclude-pattern>/src/FeedSettingsFields.php</exclude-pattern>
-    </rule>
 </ruleset>
