@@ -3,7 +3,7 @@
  * Plugin Name:     WC New Order Email Sorting Hat
  * Plugin URI:      https://www.itineris.co.uk/
  * Description:     Send new order emails to different recipients according to product types
- * Version:         0.1.1
+ * Version:         0.1.2
  * Author:          Itineris Limited
  * Author URI:      https://www.itineris.co.uk/
  * Text Domain:     wc-new-order-email-sorting-hat
