@@ -12,6 +12,8 @@ declare(strict_types=1);
 
 namespace Itineris\WCNewOrderEmailSortingHat;
 
+use Illuminate\Support\Arr;
+
 // If this file is called directly, abort.
 if (! defined('WPINC')) {
     die;
@@ -71,7 +73,7 @@ add_filter('woocommerce_email_recipient_new_order', function ($recipient, $order
 
     $newRecipient = [];
     foreach ($productIds as $productId) {
-        $notification = array_first(getNotifications(), function (NotifierInterface $notification) use ($productId): bool {
+        $notification = Arr::first(getNotifications(), function (NotifierInterface $notification) use ($productId): bool {
             return $notification->shouldNotify($productId);
         });
 
