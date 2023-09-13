@@ -1,11 +1,20 @@
 # Changelog
 
+## [0.2.2](https://github.com/itinerisltd/wc-new-order-email-sorting-hat/tree/0.2.2) (2023-09-13)
+
+[Full Changelog](https://github.com/itinerisltd/wc-new-order-email-sorting-hat/compare/0.2.1...0.2.2)
+
+**Merged pull requests:**
+
+- fix: undefined function `array_first` [\#9](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/pull/9) ([codepuncher](https://github.com/codepuncher))
+
 ## [0.2.1](https://github.com/itinerisltd/wc-new-order-email-sorting-hat/tree/0.2.1) (2023-09-11)
 
 [Full Changelog](https://github.com/itinerisltd/wc-new-order-email-sorting-hat/compare/0.2.0...0.2.1)
 
 **Merged pull requests:**
 
+- version bump [\#8](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/pull/8) ([codepuncher](https://github.com/codepuncher))
 - cr illuminate/support:~8.0 [\#7](https://github.com/ItinerisLtd/wc-new-order-email-sorting-hat/pull/7) ([codepuncher](https://github.com/codepuncher))
 
 ## [0.2.0](https://github.com/itinerisltd/wc-new-order-email-sorting-hat/tree/0.2.0) (2023-01-23)
