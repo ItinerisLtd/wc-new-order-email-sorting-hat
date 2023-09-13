@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Itineris\WCNewOrderEmailSortingHat;
 
+use Illuminate\Support\Arr;
+
 class SpecificEventTicketNotifier extends EventTicketNotifier
 {
     /**
@@ -36,7 +38,7 @@ class SpecificEventTicketNotifier extends EventTicketNotifier
 
     public function shouldNotify(int ...$productIds): bool
     {
-        $first = array_first($productIds, function ($id): bool {
+        $first = Arr::first($productIds, function ($id): bool {
             $tribeWoo = tribe('tickets-plus.commerce.woo');
             $event = $tribeWoo->get_event_for_ticket($id);
             return is_a($event, 'WP_Post') &&
