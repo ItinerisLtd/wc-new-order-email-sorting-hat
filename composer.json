@@ -23,6 +23,12 @@
             "email": "tangrufus@gmail.com",
             "homepage": "https://typist.tech/",
             "role": "Developer"
+        },
+        {
+            "name": "Lee Hanbury-Pickett",
+            "email": "lee.hanbury@gmail.com",
+            "homepage": "https://github.com/codepuncher/",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -53,7 +59,8 @@
         }
     },
     "scripts": {
-        "check-style": "phpcs --colors -p",
+        "style:check": "phpcs",
+        "style:fix": "phpcbf",
         "pretag": [
             "composer update --no-suggest",
             "@check-style",

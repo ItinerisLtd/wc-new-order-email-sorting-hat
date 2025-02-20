@@ -1,19 +1,24 @@
 <?xml version="1.0"?>
-<ruleset name="PSR2PlusWordPress">
-    <file>./</file>
-    <exclude-pattern>/wc-new-order-email-sorting-hat.php</exclude-pattern>
-    <exclude-pattern>/tests/*</exclude-pattern>
-    <exclude-pattern>/vendor/*</exclude-pattern>
+<ruleset name="Plugin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+    <file>src</file>
 
-    <arg value="s"/>
-    <config name="installed_paths" value="vendor/wp-coding-standards/wpcs,vendor/automattic/vipwpcs,vendor/itinerisltd/itineris-wp-coding-standards"/>
-    <config name="minimum_supported_wp_version" value="4.9"/>
+    <!-- Show colors in console -->
+    <arg value="-colors" />
+
+    <!-- Show progress and sniff codes in all reports; Show progress of the run -->
+    <arg value="sp" />
+
+    <!-- Scan only PHP files -->
+    <arg name="extensions" value="php" />
+
+    <!-- Use Itineris WP Coding Standards -->
+    <rule ref="Itineris" />
+
+    <config name="minimum_supported_wp_version" value="6.7"/>
 
     <rule ref="WordPress.WP.I18n">
         <properties>
             <property name="text_domain" type="array" value="wc-new-order-email-sorting-hat"/>
         </properties>
     </rule>
-
-    <rule ref="Itineris"/>
 </ruleset>
