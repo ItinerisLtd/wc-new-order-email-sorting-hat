@@ -23,15 +23,21 @@
             "email": "tangrufus@gmail.com",
             "homepage": "https://typist.tech/",
             "role": "Developer"
+        },
+        {
+            "name": "Lee Hanbury-Pickett",
+            "email": "lee.hanbury@gmail.com",
+            "homepage": "https://github.com/codepuncher/",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
         "composer/installers": "^1.6",
-        "illuminate/support": "~8.0"
+        "illuminate/support": "*"
     },
     "require-dev": {
-        "itinerisltd/itineris-wp-coding-standards": "^0.4.1",
+        "itinerisltd/itineris-wp-coding-standards": "^1.0",
         "roave/security-advisories": "dev-master"
     },
     "config": {
@@ -53,7 +59,8 @@
         }
     },
     "scripts": {
-        "check-style": "phpcs --colors -p",
+        "style:check": "phpcs",
+        "style:fix": "phpcbf",
         "pretag": [
             "composer update --no-suggest",
             "@check-style",
