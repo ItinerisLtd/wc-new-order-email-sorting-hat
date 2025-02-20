@@ -29,10 +29,10 @@ Send new order emails to different recipients according to product types.
 
 ## Minimum Requirements
 
-- PHP v7.2
-- WordPress v4.9.8
-- WooCommerce v3.5.1
-- *Optional* [Event Tickets](https://wordpress.org/plugins/event-tickets/) v4.8.2.1
+- PHP v8.1
+- WordPress v6.7
+- WooCommerce v9.6
+- *Optional* [Event Tickets](https://wordpress.org/plugins/event-tickets/) v5.9
 
 ## Installation
 
