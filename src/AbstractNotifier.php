@@ -48,7 +48,7 @@ abstract class AbstractNotifier implements NotifierInterface
     {
         return (string) get_option(
             $this->getOptionId(),
-            ''
+            '',
         );
     }
 }

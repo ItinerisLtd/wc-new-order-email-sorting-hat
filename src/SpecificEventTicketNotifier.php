@@ -10,24 +10,20 @@ class SpecificEventTicketNotifier extends EventTicketNotifier
 {
     /**
      * Option ID
-     *
-     * @var string
      */
-    protected $optionId;
+    protected string $optionId;
 
     /**
      * Option title
-     *
-     * @var string
      */
-    protected $optionTitle;
+    protected string $optionTitle;
 
     /**
      * Targeted post types
      *
      * @var string[]
      */
-    protected $includePostTypes;
+    protected array $includePostTypes;
 
     public function __construct(string $optionId, string $optionTitle, string ...$includePostTypes)
     {
