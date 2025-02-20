@@ -3,11 +3,12 @@
  * Plugin Name:     WC New Order Email Sorting Hat
  * Plugin URI:      https://www.itineris.co.uk/
  * Description:     Send new order emails to different recipients according to product types
- * Version:         0.2.2
+ * Version:         0.3.0
  * Author:          Itineris Limited
  * Author URI:      https://www.itineris.co.uk/
  * Text Domain:     wc-new-order-email-sorting-hat
  */
+
 declare(strict_types=1);
 
 namespace Itineris\WCNewOrderEmailSortingHat;
@@ -53,7 +54,7 @@ add_filter('woocommerce_email_settings', function (array $settings): array {
                 'id'   => 'new_order_email_refinery',
             ],
         ],
-        $settings
+        $settings,
     );
 });
 
