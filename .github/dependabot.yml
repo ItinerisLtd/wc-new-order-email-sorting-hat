@@ -1,5 +1,4 @@
 version: 2
-
 updates:
   - package-ecosystem: composer
     directory: "/"
@@ -9,3 +8,5 @@ updates:
       timezone: Europe/London
     open-pull-requests-limit: 10
     versioning-strategy: increase
+    cooldown:
+      default-days: 21
