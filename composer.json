@@ -37,7 +37,7 @@
         "illuminate/support": "*"
     },
     "require-dev": {
-        "itinerisltd/itineris-wp-coding-standards": "^1.0",
+        "itinerisltd/itineris-wp-coding-standards": "^1.1",
         "roave/security-advisories": "dev-master"
     },
     "config": {
